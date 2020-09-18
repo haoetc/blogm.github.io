@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Markdown基本语法</title>
+      <link href="posts/46d5.html"/>
+      <url>posts/46d5.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式，如今 Markdown 越来越受人欢迎，本文就向大家介绍一下 MarkDown 常用的一些语法。</p></blockquote><p>标题</p><p>标题是 Markdown 中非常常用的格式，只要在文本前，添加 #空格，就可以将文本定义为标题了，总共六级标题，每多一级便多一个 #。 </p><p>#一级标题#</p><p>##二级标题##</p><p>###三级标题###</p><p>####四级标题####</p><p>#####五级标题 #####</p><p>######六级标题######</p><p>列表</p><p>和 HTML 一样，MarkDown 也是存在无序列表和有序列表的。</p><p>无序列表</p><p>无序列表只需在文本前，前缀 - 或者 *，即可将文本定义为无序列表。</p><ul><li><p>苹果</p></li><li><p>香蕉</p></li><li><p>牛奶</p><p>  有序列表</p><p>  有序列表只需在文本前，前缀序号，例如 1.、2.、3., 即可将文本定义为有序列表。</p></li></ul><ol><li><p>苹果</p></li><li><p>香蕉</p></li><li><p>牛奶</p><p> 字体</p><p> 斜体</p><p> 需要斜体的文本，在前后均使用 * 即可对文本进行倾斜。</p></li></ol><p><em>斜体效果</em></p><p>加粗</p><p>需要加粗的文本，在前后均使用 ** 即可对文本进行加粗。</p><p><strong>加粗效果</strong></p><p>斜体加粗</p><p>若要同时使用斜体和加粗效果，在前后均使用 *** 即可对文本进行倾斜和加粗的效果。</p><p><strong><em>倾斜和加粗同时使用</em></strong></p><p>删除线</p><p>需要使用删除线的文本，在前后均使用～～即可对文本添加删除线效果。</p><p>删除线效果</p><p>分割线</p><p>分割线需要三个 *** 即可实现分割线的效果，以下为分割线效果。</p><h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p>如果你需要使用用引用的格式，则需要在文本前增加 &gt;（大于号）即可实现引用效果</p><blockquote><p>引用效果</p></blockquote><p>代码</p><p>如果你需要将一块文本定义为代码，则需要使用3个，并用三个进行结尾，可在`后指定代码语言。</p><pre><code>代码效果</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="posts/3eeb.html"/>
       <url>posts/3eeb.html</url>
