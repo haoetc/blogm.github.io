@@ -102,7 +102,7 @@
 
   <url>
     <loc>https://blog.pt1080.com/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,35 +110,35 @@
   
   <url>
     <loc>https://blog.pt1080.com/tags/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.pt1080.com/tags/%E5%85%8D%E8%B4%B9/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.pt1080.com/tags/hexo/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.pt1080.com/tags/Markdown/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.pt1080.com/tags/%E6%B4%BB%E5%8A%A8/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -147,21 +147,21 @@
   
   <url>
     <loc>https://blog.pt1080.com/categories/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.pt1080.com/categories/Hexo/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.pt1080.com/categories/%E6%B4%BB%E5%8A%A8%E7%BA%BF%E6%8A%A5/</loc>
-    <lastmod>2020-10-03</lastmod>
+    <lastmod>2020-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
