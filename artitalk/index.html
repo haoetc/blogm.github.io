@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="微趣点">
+    <meta name="keywords" content="说说, 微趣点">
     <meta name="description" content="与其临渊羡鱼，不如退而结网">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>微趣点</title>
+    <title>说说 | 微趣点</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -397,56 +397,9 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -483,382 +436,109 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/haoetc" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/haoetc" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1157954558@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1157954558" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1157954558" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
     </div>
-
-    
 </div>
 
+<style ype="text/css">
+
+#pubShuo {
+
+  margin-right: 5px;
+}
+
+#operare_artitalk .shuoshuo_input_log {
+    outline-style: none;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 12px;
+    background-color: transparent;
+
+    color: #0bb7fbd6;
+    width: 70%;
+    height: 28px;
+    margin-left: 10px;
+}
+
+#artitalk_main {
+
+  margin-top: 5px ;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+#lazy{
+  margin-top: 40px;
+}
+
+</style>
+
+
+<script src="/libs/artitalk/artitalk.min.js"></script>
+
+<article id="articles11" class="container  chip-container">
+  <div class="row ">
+
+      <div class=" card">
+        <div class="card-content" >
+          <div class="tag-title center-align">
+                <i class="fas fa-pen-alt"></i> 说说
+           </div>
+          <div id="artitalk_main"></div>
+        </div>  
+      </div>
+
+  </div>
+</article>
 <script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-
-        function restartPlay() {
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
+  new Artitalk({
+        appId: "XVhzpy0HDxEu7p9wdwGdDbRc-MdYXbMMI",
+        appKey: "iiCqJuIcB5wz6lzLhY63TdNT",
+      
+          serverURL: "https://blog.pt1080.com",
+      
+      
+          lang: "zh",
+      
+      
+          pageSize: "10",
+      
+      
+      
+          avatarPla: "https://cdn.jsdelivr.net/gh/small-rose/small-rose.github.io/medias/avatar.jpg",
+      
+      
+          motion: 1,
+      
+      
+      
+          color1: "linear-gradient(45deg, rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%)",
+      
+      
+          color2: "linear-gradient(45deg, rgb(109, 208, 242) 15%, rgb(245, 154, 190) 85%)",
+      
+      
+          color3: "black",
+      
+      
+          atEmoji: {
+              baiyan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/baiyan.png",
+              bishi: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bishi.png",
+              bizui: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/bizui.png",
+              chan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/chan.png",
+              daku: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/daku.png",
+              dalao: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalao.png",
+              dalian: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dalian.png",
+              dianzan: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/dianzan.png",
+              doge: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/doge.png",
+              facai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/facai.png",
+              fadai: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fadai.png",
+              fanu: "https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji/fanu.png",
+           },
+     })
 </script>
-
-
-
-<main class="content">
-
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-
-                    
-                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
-<div class="video-player">
-    
-    <div class="title center-align">
-        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="dplayer" class="dplayer-video"
-                    ></div>
-        </div>
-    </div>
-</div>
-
-<script src="/libs/dplayer/DPlayer.min.js"></script>
-<script>
-    $(function () {
-        new DPlayer({
-            container: document.getElementById('dplayer'),
-            autoplay: 'true' === 'true',
-            theme: '#42b983',
-            loop: 'false' === 'true',
-            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
-            preload: 'auto',
-            volume: Number('0.7'),
-            video: {
-                url: 'https://cdn.jsdelivr.net/gh/haoetc/imgpt1080/givupvideo/output.m3u8',
-                pic: 'https://cdn.jsdelivr.net/gh/haoetc/imgpt1080/img/20200921180420.jpg',
-                thumbnails: ''
-            }
-        });
-    });
-</script>
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/b5e1.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Epic 免费领取过山车大亨3游戏《 RollerCoaster Tycoon 3 Complete Edition 》">
-                            
-                            <span class="card-title">Epic 免费领取过山车大亨3游戏《 RollerCoaster Tycoon 3 Complete Edition 》</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                《过山车大亨 3》是一款经营类游戏，完整版包含两款大型扩展包《Soaked!》和《Wild!》。
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-25
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B8%B8%E6%88%8F/" class="post-category">
-                                    游戏
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                            <span class="chip bg-color">游戏</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%85%8D%E8%B4%B9/">
-                            <span class="chip bg-color">免费</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/46d5.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Markdown基本语法">
-                            
-                            <span class="card-title">Markdown基本语法</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Markdown 是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-18
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/hexo/">
-                            <span class="chip bg-color">hexo</span>
-                        </a>
-                        
-                        <a href="/tags/Markdown/">
-                            <span class="chip bg-color">Markdown</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/3eeb.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                            
-                            <span class="card-title">Hello World</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                唤笙
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/dbfd.html">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="阿里云双12活动：国内云服务器89元/年起，中国香港云服务器119元/年(新用户)">
-                            
-                            <span class="card-title">阿里云双12活动：国内云服务器89元/年起，中国香港云服务器119元/年(新用户)</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                阿里云也不甘落后，活动力度也给力。有需要的可以关注一下！
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E6%B4%BB%E5%8A%A8%E7%BA%BF%E6%8A%A5/" class="post-category">
-                                    活动线报
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%B4%BB%E5%8A%A8/">
-                            <span class="chip bg-color">活动</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-
-</main>
-
-
 
 
     <footer class="page-footer bg-color">
