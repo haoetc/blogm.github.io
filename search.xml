@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>PC游戏分享《战争机器：战略版》中文版</title>
+      <link href="posts/21bc.html"/>
+      <url>posts/21bc.html</url>
+      
+        <content type="html"><![CDATA[<p>战争机器战略版是一款快节奏的回合制策略游戏，也是战争机器的续作，玩家需要指挥你的小队，前去击杀制造怪物的幕后主谋，并在以寡敌众的战斗中生存下来。</p><h2 id="游戏截图"><a href="#游戏截图" class="headerlink" title="游戏截图"></a>游戏截图</h2><p><img src="https://cdn.jsdelivr.net/gh/haoetc/imgpt1080/images/1601531883786197.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/haoetc/imgpt1080/images/1601531887649428.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/haoetc/imgpt1080/images/1601531891970221.jpg"></p><p><img src="https://cdn.jsdelivr.net/gh/haoetc/imgpt1080/images/1601531896224592.jpg"></p><h2 id="版本介绍"><a href="#版本介绍" class="headerlink" title="版本介绍"></a>版本介绍</h2><p>完整版|容量28GB|官方简体中文|支持键盘.鼠标.手柄|赠多项修改器</p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://cloud.189.cn/t/77ZJFrBZ3aee">天翼网盘</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PC游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Epic 免费领取过山车大亨3游戏《 RollerCoaster Tycoon 3 Complete Edition 》</title>
       <link href="posts/b5e1.html"/>
       <url>posts/b5e1.html</url>
